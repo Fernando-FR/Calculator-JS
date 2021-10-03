@@ -7,13 +7,19 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="styles.css">
     <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Rationale Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rationale&display=swap" rel="stylesheet">
+    <!--Roboto Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
-        <h1 id="title">Calculator</h1>
+        <h3 id="title">Calculator</h3>
         <div id="calculator">
             <div id="display">
-                1312312312
+                1312312312123
             </div>
             <table id="inputs">
                 <tr>
@@ -74,6 +80,9 @@
                     <td>
                         <button id="number-3">3</button>
                     </td>
+                    <td rowspan="2">
+                        <button id="plus">+</button>
+                    </td>
                 </tr>
                 <tr>
                    <td>
@@ -84,9 +93,6 @@
                    </td>
                    <td>
                        <button id="equal">=</button>
-                   </td>
-                   <td>
-                       <button id="plus">+</button>
                    </td>
                 </tr>
             </table>
@@ -101,15 +107,17 @@
                 </button>
             </div>
         </div>
-        <div id="history">
-            <header class="history-header">
-                <h1>History</h1>
-                <button id="history-close">X</button>
-            </header>
-            <section id="history-item">
-                <header id="calc">20x20</header>
-                <footer id="result">400</footer>
-            </section>
+        <div id="blackscreen">
+            <div id="history">
+                <header id="history-header">
+                    <h1>History</h1>
+                    <button id="history-close">X</button>
+                </header>
+                <section class="history-item">
+                    <header class="calc">20x20</header>
+                    <footer class="result">400</footer>
+                </section>
+            </div>
         </div>
     </div>
 </body>
