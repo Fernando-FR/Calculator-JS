@@ -82,7 +82,7 @@ body{
                             background-color: darken($button_color,5%);
                         }
                     }
-                    #power,#plus{
+                    #clear,#plus{
                         background-color: $red_color;
                         &:hover{
                             background-color: darken($red_color,5%);
@@ -100,7 +100,7 @@ body{
             align-items: center;
             width: 100%;
 
-            button{
+            button,a{
                 color: white;
                 display: flex;
                 align-items: center;
@@ -114,6 +114,7 @@ body{
                 font-size: toRem(30);
                 padding: toRem(5);
                 font-family: $secondary_font;
+                text-decoration: none;
             }
         }
     }
